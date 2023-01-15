@@ -1,17 +1,22 @@
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 #main{
-    display: grid;
-    height: 100vh;
-    justify-items: center;
+    display: flex;
     align-items: center;
 }
 
 .grid {
-    display: flex;
-    border: 2px solid black;
-    height: 50rem;
-    width: 50rem;
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: var(--secondary-light);
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
+.gridElement{
+   
+}
+
+
