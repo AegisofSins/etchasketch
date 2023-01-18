@@ -1,22 +1,122 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #FAFA;
+}
+.header {
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    width: 100%;
+    padding-top: 2rem;
+
+
+}
+.game {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-top: 5rem;
+
 }
 #main{
     display: flex;
-    align-items: center;
 }
 
 .grid {
     display: grid;
     width: 500px;
     height: 500px;
-    background-color: var(--secondary-light);
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    background-color: #ECE63D;
+    box-shadow: rgb(0 0 0 / 30%) 0px 3px 8px;
 }
-.gridElement{
-   
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-right: 50px;
 }
 
+.side-menu > button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 20px;
+    border-radius: 1.25rem;
+    background-color: blue;
+    height: 30px;
+    border: none;
+    font-weight: 900;
+    box-shadow: rgb(0 0 0 / 30%) 0px 3px 8px;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.side-menu > button:hover {
+    opacity: 1;
+}
 
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #000;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.output {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+    
+
+}
+
+@media only screen and (max-width: 800px) {
+    #main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .side-menu {
+        align-items: center;
+        height: auto;
+        width: 500px;
+        padding-bottom: 20px;
+    }
+    .game {
+        height: 1100px;
+        margin-top: 20px;
+    }
+  }
+  
