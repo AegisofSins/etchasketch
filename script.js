@@ -5,7 +5,7 @@ const grid = document.createElement('div');
 const value = document.querySelector('#value');
 const input = document.querySelector('.slider');
 const clearN = document.querySelector('.clearNotepad');
-var colorPicker = new iro.ColorPicker('#picker', {
+let colorPicker = new iro.ColorPicker('#picker', {
   width: 200,
 });
 

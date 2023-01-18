@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/AegisofSins/etchasketch#readme",
   "dependencies": {
-    "@jaames/iro": "^5.5.2",
-    "requirejs": "^2.3.6"
+    "@jaames/iro": "^5.5.2"
   }
 }
